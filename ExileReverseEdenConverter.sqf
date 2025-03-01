@@ -38,10 +38,8 @@ getAnglesFromVectorDirAndUp = {
 collect3DENHistory {
 
 	{
-		private[ "_obj" ];
-		_x params[ "_type", "_pos", "_VectorUpAndDir" ];
-
-		_obj = create3DENEntity [ "Object", _type, _pos, true ];
+		_x params[ "_type", "_pos", "_VectorUpAndDir"];
+		private _obj = create3DENEntity [ "Object", _type, _pos, true ];
 		_obj setPosASL _pos;
 		_obj setVectorDirAndUp _VectorUpAndDir;
 		
