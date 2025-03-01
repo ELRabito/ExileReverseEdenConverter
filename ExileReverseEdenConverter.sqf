@@ -1,9 +1,12 @@
+// Paste your _objects array from Initserver.sqf below
 private _objects = 
 [
 	["Land_CarService_F", [14618.7,16877.4,18.7724], [[0.750538,-0.660827,0],[0,0,1]], [true, false]],
 	["Land_cargo_addon02_V2_F", [14563.7,16776.6,19.4699], [[0.723738,-0.690074,0],[0,0,1]], [false, false]]
 ];
 
+//
+//// Function start - Don't edit below if you don't know what you are doing.
 getAnglesFromVectorDirAndUp = {
 	params ["_vectorDir", "_vectorUp"];
 	private _fdLength = sqrt(((_vectorDir select 0)^2) + ((_vectorDir select 1)^2) + ((_vectorDir select 2)^2));
