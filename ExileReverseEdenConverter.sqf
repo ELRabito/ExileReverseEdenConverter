@@ -7,6 +7,7 @@ private _objects =
 
 //
 //// Function start - Don't edit below if you don't know what you are doing.
+// Convert 3D vectors to angles
 getAnglesFromVectorDirAndUp = {
 	params ["_vectorDir", "_vectorUp"];
 	private _fdLength = sqrt(((_vectorDir select 0)^2) + ((_vectorDir select 1)^2) + ((_vectorDir select 2)^2));
@@ -33,7 +34,7 @@ getAnglesFromVectorDirAndUp = {
 	
 	[_pitch, _roll, _yaw]
 };
-
+// create create3DENEntities
 collect3DENHistory {
 
 	{
@@ -48,11 +49,9 @@ collect3DENHistory {
 };
 // Update edenAttributes
 {
-
-
-		_VectorUpAndDir = [vectorDir _x,vectorUp _x];
-		_convertXYZYaw =  [_VectorUpAndDir select 0, _VectorUpAndDir select 1] call getAnglesFromVectorDirAndUp;
-		_x set3DENAttribute ["position",getposATL _x];
-		_x set3DENAttribute ["Rotation",_convertXYZYaw];
+	_VectorUpAndDir = [vectorDir _x,vectorUp _x];
+	_convertXYZYaw =  [_VectorUpAndDir select 0, _VectorUpAndDir select 1] call getAnglesFromVectorDirAndUp;
+	_x set3DENAttribute ["position",getposATL _x];
+	_x set3DENAttribute ["Rotation",_convertXYZYaw];
 		
 } forEach (all3DENEntities select 0);
