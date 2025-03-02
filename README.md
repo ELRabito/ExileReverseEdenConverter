@@ -1,7 +1,7 @@
 # ExileReverseEdenConverter
 
 - Converts the Exile Eden Plugin export format back to a usable/editable Eden format.
-- There is a minimal change in position on some objects, and if objects from the source data were placed too deep into the ground, there might be a slightly bigger deviation for the Z axis in the conversion.
+- There is a minimal change in position on some objects, and if objects from the source data were placed too deep into the ground, there might be a slightly bigger deviation for the Z axis.
 - Should still save a lot of time if you lost your source file for Eden. Feel free to contribute if you can make it more precise.
 
 # How-To-Use
