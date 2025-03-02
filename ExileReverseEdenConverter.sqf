@@ -19,14 +19,10 @@ getAnglesFromVectorDirAndUp = {
 		((_up select 2) * (_fd select 0)) - ((_up select 0) * (_fd select 2)),
 		((_up select 0) * (_fd select 1)) - ((_up select 1) * (_fd select 0))
 	];
-	private _r11 = _right select 0;
-	private _r21 = _right select 1;
 	private _r31 = _right select 2;
 	private _r12 = _fd select 0;
 	private _r22 = _fd select 1;
 	private _r32 = _fd select 2;
-	private _r13 = _up select 0;
-	private _r23 = _up select 1;
 	private _r33 = _up select 2;
 	private _pitch = asin(-_r32);
 	private _roll = (_r31) atan2 (_r33);
