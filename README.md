@@ -7,7 +7,7 @@
 # How-To-Use
 - Paste/replace your source _objects array from your Exile Eden Plugin export (from initServer.sqf for example) at the top of the code from inside the provided ExileReverseEdenConverter.sqf and execute the code in the debug console.
 
-# Objects spawned via the initServer.sqf code as comparison.
+# Objects spawned with Exile Eden Plugin code.
 ![20250302150319_1](https://github.com/user-attachments/assets/94fe35bc-7434-4de0-b351-a885c6702df3)
 
 # Objects spawned with the ExileReverseEdenConverter
