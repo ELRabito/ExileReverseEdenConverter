@@ -45,9 +45,10 @@ collect3DENHistory {
 };
 // Update edenAttributes
 {
-	_VectorUpAndDir = [vectorDir _x,vectorUp _x];
-	_convertXYZYaw =  [_VectorUpAndDir select 0, _VectorUpAndDir select 1] call getAnglesFromVectorDirAndUp;
-	_x set3DENAttribute ["position",getPosATL _x];
-	_x set3DENAttribute ["Rotation",_convertXYZYaw];
+	private _object = _x;
+	private _VectorUpAndDir = [vectorDir _object,vectorUp _object];
+	private _convertXYZYaw =  [_VectorUpAndDir select 0, _VectorUpAndDir select 1] call getAnglesFromVectorDirAndUp;
+	_object set3DENAttribute ["position",getPosATL _x];
+	_object set3DENAttribute ["Rotation",_convertXYZYaw];
 		
 } forEach (all3DENEntities select 0);
