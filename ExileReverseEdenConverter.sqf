@@ -31,6 +31,7 @@ getAnglesFromVectorDirAndUp = {
 	[_pitch, _roll, _yaw]
 };
 // create create3DENEntities
+private _ExileReverseEdenConverterLayer = -1 add3DENLayer "ExileReverseEdenConverter";
 collect3DENHistory {
 
 	{
@@ -38,6 +39,7 @@ collect3DENHistory {
 		private _obj = create3DENEntity [ "Object", _type, _pos, true ];
 		_obj setPosASL _pos;
 		_obj setVectorDirAndUp _VectorUpAndDir;
+		_obj set3DENLayer _ExileReverseEdenConverterLayer;
 		
 	} forEach _objects;
 };
@@ -45,7 +47,7 @@ collect3DENHistory {
 {
 	_VectorUpAndDir = [vectorDir _x,vectorUp _x];
 	_convertXYZYaw =  [_VectorUpAndDir select 0, _VectorUpAndDir select 1] call getAnglesFromVectorDirAndUp;
-	_x set3DENAttribute ["position",getposATL _x];
+	_x set3DENAttribute ["position",getPosATL _x];
 	_x set3DENAttribute ["Rotation",_convertXYZYaw];
 		
 } forEach (all3DENEntities select 0);
