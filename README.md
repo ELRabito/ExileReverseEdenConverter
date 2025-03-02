@@ -2,7 +2,10 @@ Converts the Exile Eden plugin export from the InitServer.sqf format back to a u
 
 Edit the _objects array and execute the code in the debug console. 
 
-If objects from the source data were placed too deep into the ground, there might be a bigger difference for the Z axis in the conversion.
+There is a minimal change in position on some objects, and if objects from the source data were placed too deep into the ground, there might be a slightly bigger deviation for the Z axis in the conversion.
+Should still save a lot of time if you lost your source file for Eden. 
+Feel free to contribute if you can make it more precise.
+
 
 # Objects spawned via the initServer.sqf code as comparison.
 ![20250302150319_1](https://github.com/user-attachments/assets/94fe35bc-7434-4de0-b351-a885c6702df3)
