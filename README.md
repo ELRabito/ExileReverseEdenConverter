@@ -5,7 +5,8 @@ Edit the _objects array and execute the code in the debug console.
 If objects from the source data were placed too deep into the ground, there might be a bigger difference for the Z axis in the conversion.
 
 # Objects spawned via the initServer.sqf code as comparison.
-![grafik](https://github.com/user-attachments/assets/f33850eb-8e3b-4892-86a6-ae7de2041365)
+![20250302150319_1](https://github.com/user-attachments/assets/94fe35bc-7434-4de0-b351-a885c6702df3)
+
 
 # Objects spawned with the ExileReverseEdenConverter
-![grafik](https://github.com/user-attachments/assets/11664e3f-1090-4ec0-971d-7d1fad5fd8fb)
+![20250302150319_1](https://github.com/user-attachments/assets/be843807-38ae-4bf7-b93d-e8786e59dfa7)
