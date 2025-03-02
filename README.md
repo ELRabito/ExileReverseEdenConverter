@@ -9,4 +9,5 @@ If objects from the source data were placed too deep into the ground, there migh
 
 
 # Objects spawned with the ExileReverseEdenConverter
-![20250302150319_1](https://github.com/user-attachments/assets/be843807-38ae-4bf7-b93d-e8786e59dfa7)
+![20250302150305_1](https://github.com/user-attachments/assets/0a0eddc5-eda8-4015-8f90-1a72613cdfd9)
+
